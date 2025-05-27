@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Krishna Sai Govindu | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --glass: rgba(255, 255, 255, 0.1);
+      --highlight: #00f7ff;
+      --secondary: #a259ff;
+      --text-light: #ffffffee;
+      --text-muted: #cccccc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-light);
+      background: linear-gradient(135deg, #070707, #1a1a40, #320a28, #1f0030);
+      background-size: 600% 600%;
+      animation: animatedBg 20s ease infinite;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes animatedBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--highlight);
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      margin: 0 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2.5rem auto;
+      background: var(--glass);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      animation: fadeIn 1s ease-in;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--highlight);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills, .certs, .languages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills span, .certs li, .languages span {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      font-size: 0.95rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 1.5rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #bbb;
+    }
+
+    i {
+      margin-right: 0.5rem;
+      color: var(--secondary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Krishna Sai Govindu</h1>
+    <p><i class="fa-solid fa-laptop-code"></i> Aspiring Computer Science Engineer</p>
+    <nav>
+      <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+      <a href="#skills"><i class="fa-solid fa-brain"></i> Skills</a>
+      <a href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a>
+      <a href="#certifications"><i class="fa-solid fa-award"></i> Certifications</a>
+      <a href="#languages"><i class="fa-solid fa-language"></i> Languages</a>
+      <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2><i class="fa-solid fa-user"></i> About Me</h2>
+    <p>I’m a Computer Science Engineering student passionate about AI, web development, and building innovative solutions. I love applying code to solve real-world problems.</p>
+  </section>
+
+  <section id="education">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+    <ul>
+      <li><strong>B.Tech in CSE</strong> – Vignan’s Lara Institute of Technology and Science (2021–2025) | CGPA: 7.8</li>
+      <li><strong>Intermediate (MPC)</strong> – Sri Chaitanya Junior College (2019–2021) | CGPA: 7.49</li>
+      <li><strong>High School</strong> – Oxford Concept School (2018–2019) | CGPA: 9.3</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2><i class="fa-solid fa-brain"></i> Skills</h2>
+    <div class="skills">
+      <span>C++</span><span>Python</span><span>Java</span>
+      <span>MySQL</span><span>HTML5</span><span>CSS</span><span>JavaScript</span>
+      <span>Problem Solving</span><span>Communication</span>
+      <span>Time Management</span><span>Adaptability</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><i class="fa-solid fa-briefcase"></i> Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Advanced Fraud Detection (2025)</h3>
+        <p><strong>Tech:</strong> Python, Flask, Androguard</p>
+        <ul>
+          <li>Malware detection using ANN</li>
+          <li>Genetic Algorithm for feature selection</li>
+          <li>Flask UI for real-time APK analysis</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Hostel Management System (2023)</h3>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+        <ul>
+          <li>User module for room booking</li>
+          <li>Admin dashboard for approval</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2><i class="fa-solid fa-award"></i> Certifications</h2>
+    <ul class="certs">
+      <li>Salesforce Developer – SmartInternz</li>
+      <li>Modern C++ – NPTEL</li>
+      <li>DSA in Python – NPTEL</li>
+      <li>Java Programming – NPTEL</li>
+      <li>DBMS – NPTEL</li>
+      <li>Python Essentials – CISCO</li>
+      <li>Networking Basics – CISCO</li>
+      <li>Cambridge A2 (PET)</li>
+    </ul>
+  </section>
+
+  <section id="languages">
+    <h2><i class="fa-solid fa-language"></i> Languages Known</h2>
+    <div class="languages">
+      <span>English</span>
+      <span>Telugu</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> <a href="mailto:krishnasaigovindu789@gmail.com">krishnasaigovindu789@gmail.com</a></p>
+    <p><i class="fa-solid fa-phone"></i> +91 9603213209</p>
+    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Krishnasaigovindu" target="_blank">github.com/Krishnasaigovindu</a></p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://in.linkedin.com/in/krishna-sai-govindu-9b34b1252" target="_blank">linkedin.com/in/krishna-sai-govindu</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Krishna Sai Govindu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
